@@ -10,7 +10,12 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		double xA, xB, xC, yA, yB, yC;
+		double xA;
+		double xB;
+		double xC;
+		double yA;
+		double yB;
+		double yC;
 
 		System.out.println("Enter the measures of triangle X:");
 		xA = sc.nextDouble();

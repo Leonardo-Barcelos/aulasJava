@@ -21,7 +21,7 @@ public class Product {
 		return this.name 
 				+ ", $" 
 				+ String.format("%.2f", this.price) 
-				+ "," 
+				+ ", " 
 				+ this.quantity + " units $" 
 				+ String.format("%.2f", this.totalValueInStock());
 

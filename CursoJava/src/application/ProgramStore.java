@@ -24,8 +24,18 @@ public class ProgramStore {
 		System.out.print("Quantity in stock: ");
 		product.quantity = sc.nextInt();
 		
-		System.out.println(product);
+		System.out.println("\nProduct data: " + product);
 
+		System.out.print("\nEnter the number of products to be added in stock: ");
+		product.addProducts(sc.nextInt());
+		
+		System.out.println("\nUpdate data: " + product);
+		
+		System.out.print("\nEnter the number of products to be removed in stock: ");
+		product.removeProducts(sc.nextInt());
+		
+		System.out.println("\nUpdate data: " + product);
+		
 		sc.close();
 
 	}

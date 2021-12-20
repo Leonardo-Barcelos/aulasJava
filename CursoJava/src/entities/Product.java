@@ -18,7 +18,12 @@ public class Product {
 	}
 
 	public String toString() {
-		return this.name + ", $" + String.format("%.2f", this.price) + "," + this.quantity + " units $" +String.format("%.2f", this.totalValueInStock());
+		return this.name 
+				+ ", $" 
+				+ String.format("%.2f", this.price) 
+				+ "," 
+				+ this.quantity + " units $" 
+				+ String.format("%.2f", this.totalValueInStock());
 
 	}
 }

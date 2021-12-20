@@ -17,7 +17,7 @@ public class Product {
 		this.quantity -= quantity;
 	}
 	
-	public void displayProduct() {
-		System.out.println("Product: " + this.name + ", Price: " + this.price + ", Quantity: " + this.quantity);
+	public String toString() {
+		return "Product: " + this.name + ", Price: " + this.price + ", Quantity: " + this.quantity ;
 	}
 }

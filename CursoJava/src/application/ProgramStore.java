@@ -24,7 +24,7 @@ public class ProgramStore {
 		System.out.print("Quantity in stock: ");
 		product.quantity = sc.nextInt();
 		
-		product.displayProduct();
+		product.toString();
 
 		sc.close();
 

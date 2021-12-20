@@ -3,10 +3,14 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Triangle;
+
 public class Program {
 
 	public static void main(String[] args) {
 
+		/* VERSÃO ANTIGA
+		  
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
@@ -45,6 +49,37 @@ public class Program {
 		}
 
 		sc.close();
+	*/
+		Scanner sc = new Scanner(System.in);
+		Triangle triangleX = new Triangle();
+		Triangle triangleY = new Triangle();
+		
+		System.out.println("Enter the measures of triangle X:");
+		triangleX.a = sc.nextDouble();
+		triangleX.b = sc.nextDouble();
+		triangleX.c = sc.nextDouble();
+		
+		System.out.println("Enter the measures of triangle Y:");
+		triangleY.a = sc.nextDouble();
+		triangleY.b = sc.nextDouble();
+		triangleY.c = sc.nextDouble();
+		
+		double areaX = triangleX.getArea();
+		double areaY = triangleY.getArea();
+		
+		System.out.printf("Triangle X area: %.4f%n", areaX);
+		System.out.printf("Triangle Y area: %.4f%n", areaY);
+		
+		if (areaX > areaY) {
+			System.out.println("Larger area: X");
+		} else if (areaX == areaY) {
+			System.out.println("They have igual area");
+		} else {
+			System.out.println("Larger area: Y");
+		}
+		
+		
+		sc.close();
 	}
-
+		
 }

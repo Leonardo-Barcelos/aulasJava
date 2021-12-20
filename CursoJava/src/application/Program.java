@@ -49,7 +49,8 @@ public class Program {
 		}
 
 		sc.close();
-	*/
+	**/
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		Triangle triangleX = new Triangle();
 		Triangle triangleY = new Triangle();

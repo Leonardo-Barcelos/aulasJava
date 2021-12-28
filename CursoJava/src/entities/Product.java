@@ -1,9 +1,26 @@
 package entities;
 
 public class Product {
-	public String name;
-	public double price;
-	public int quantity;
+	protected String name;
+	protected double price;
+	protected int quantity;
+	
+	//Constructor default
+	public Product() {
+		
+	}
+	//Constructor sobrecarga
+	public Product(String name, double price, int quantity) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+	//Constructor sobrecarga 2
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
+	}
+	
 
 	public double totalValueInStock() {
 		return this.price * this.quantity;
@@ -22,7 +39,8 @@ public class Product {
 				+ ", $" 
 				+ String.format("%.2f", this.price) 
 				+ ", " 
-				+ this.quantity + " units $" 
+				+ this.quantity + " units,"
+				+ "value $" 
 				+ String.format("%.2f", this.totalValueInStock());
 
 	}

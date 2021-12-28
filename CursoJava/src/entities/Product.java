@@ -1,9 +1,9 @@
 package entities;
 
 public class Product {
-	protected String name;
-	protected double price;
-	protected int quantity;
+	private String name;
+	private double price;
+	private int quantity;
 	
 	//Constructor default
 	public Product() {
@@ -21,7 +21,24 @@ public class Product {
 		this.price = price;
 	}
 	
-
+	//Getters and Setters
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	
+	//Functions
 	public double totalValueInStock() {
 		return this.price * this.quantity;
 	}

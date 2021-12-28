@@ -8,10 +8,10 @@ public class BankAccount {
 	public BankAccount() {
    //this constructor is empty
  }
-	public BankAccount(String name, double amount, int number) {
+	public BankAccount(String name, int numberAccount, double initialDeposit) {
 		   this.personName = name;
-		   this.amount = amount;
-		   this.numberAccount = number;
+		   this.numberAccount = numberAccount;
+		   deposit(initialDeposit);
 		 }
 	public BankAccount(String name, int number) {
 		   this.personName = name;
@@ -40,7 +40,7 @@ public class BankAccount {
 	}
 	public void withdraw(double value) {
 		 final double bankTax = 5.00;
-		this.amount -= value - bankTax;
+		this.amount -= value + bankTax;
 	}
 	
 	public String toString() {
